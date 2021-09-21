@@ -1,16 +1,14 @@
-### Hi there 👋
 
-<!--
-**mrpiotr-dev/mrpiotr-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Hello! I'm Piotr](https://user-images.githubusercontent.com/11849621/134168331-a0d41afc-1f34-4f2b-99ba-459d61d902b7.png)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm a developer that loves working on legacy projects. Bound for recent years to the front-end stack.
+
+Contact me on [LinkedIn](https://www.linkedin.com/in/piotr-laszczkowski-39465272/) or [Twitter](https://twitter.com/mrpiotr_dev).
+
+---
+
+<div>
+<img height="200rem" src="https://github-readme-stats.vercel.app/api?username=mrpiotr-dev&show_icons=true&bg_color=FFF&hide_border=true" alt="Piotr's github stats" /><img height="200rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrpiotr-dev&show_icons=true&bg_color=FFF&hide_border=true" alt="Piotr's top languages" />
+</div>
