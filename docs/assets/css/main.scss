@@ -3,37 +3,61 @@
 
 $primary: #111;
 $bg: #EEE;
-$break-sm: 768px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$break-xl: 1200px;
 
 body {
   background: $bg;
   font-family: 'Raleway', sans-serif;
-  font-size: 3vh;
+  font-size: 1.25em;
   margin: 0;
 
   &, a {
     color: $primary;
   }
+
+  @media (min-width: $break-sm) {
+    & {
+      font-size: 2em;
+    }
+  }
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2rem 2fr 2rem;
-  grid-template-rows: 100vh;
-  grid-template-areas: ". . right .";
+  
+  grid-template-columns: 2rem 1fr 2rem;
+  grid-template-rows: minmax(100vh,auto);
+  grid-template-areas: ". text .";
   align-items: center;
 
-  @media (max-width: $break-sm) {
+  @media (min-width: $break-md) {
     & {
-      grid-template-columns: 2rem 1fr 2rem;
-      grid-template-areas: ". right .";
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-areas: ". text .";
+    }
+  }
+  @media (min-width: $break-lg) {
+    & {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: ". text .";
+    }
+  }
+  @media (min-width: $break-xl) {
+    & {
+      grid-template-columns: 1fr minmax(1fr, 33vw) 1fr;
+      grid-template-areas: ". text .";
     }
   }
 }
 .content {
-  grid-area: right;
+  grid-area: text;
+  margin: 2rem 0;
 }
 h1, h2 {
-  font-size: 3em;
+  font-size: 2.75em;
   font-weight: 600;
   margin: 0;
 }
