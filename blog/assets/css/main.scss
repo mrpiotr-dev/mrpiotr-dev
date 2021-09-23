@@ -1,0 +1,70 @@
+---
+---
+
+$primary: #111;
+$bg: #EEE;
+$break-sm: 768px;
+
+body {
+  background: $bg;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vh;
+  margin: 0;
+
+  &, a {
+    color: $primary;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2rem 2fr 2rem;
+  grid-template-rows: 100vh;
+  grid-template-areas: ". . right .";
+  align-items: center;
+
+  @media (max-width: $break-sm) {
+    & {
+      grid-template-columns: 2rem 1fr 2rem;
+      grid-template-areas: ". right .";
+    }
+  }
+}
+.content {
+  grid-area: right;
+}
+h1, h2 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0;
+}
+p {
+  margin: 2rem 0;
+}
+.btn {
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+  @media (max-width: $break-sm) {
+    & {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+}
+.btn-outline {
+  padding: 15px 20px;
+  border: 2px solid $primary;
+  color: $primary;
+  transition: background 0.3s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $bg;
+    background: $primary;
+  }
+}
+
+
